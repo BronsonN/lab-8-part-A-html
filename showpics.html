@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ajax Display - Complex Version</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <script type="text/javascript" src="StandardJSFunctions.js"></script>
+    
+
+    <link href="showpics.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="showpics.js"></script>
+
+</head>
+
+<body>
+
+    <h2>Using Ajax to Display Content - More Complex version</h2>
+
+    <div class="detail-selector">
+        <p>Please select how you want to process the response from the XMLHttpRequest AJAX call</p>
+        <div class="radio-choice">
+            <input type="radio" id="inject-Text" value="responseText" name="injectMethod" checked>
+            <label for="inject-Text">Inject responseText</label>
+        </div>
+        <div class="radio-choice">
+            <input type="radio" id="parse-body" value="parseXMLfromResponseText" name="injectMethod" checked>
+            <label for="parse-body">Inject responseText, just the body</label>
+        </div>
+        <div class="radio-choice">
+            <input type="radio" id="inject-XML" value="responseXML" name="injectMethod">
+            <label for="inject-XML">Inject XMLHttpRequest</label>
+        </div>
+    </div>
+
+
+    <div id="firstpic">
+        <div ></div>
+    </div>
+
+    <div id="vertical-left">
+        <div id="demoLab8PartA-img1" data_LoadFile="image1.html">
+            Image one from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img2" data_LoadFile="image2.html">
+            Image two from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img3" data_LoadFile="image3.html">
+            Image three from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img4" data_LoadFile="image4.html">
+            Image four from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img5" data_LoadFile="image5.html">
+            Image five from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img6" data_LoadFile="image6.html">
+            Image six from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img7" data_LoadFile="image7.html">
+            Image seven from Part B of Midterm
+        </div>
+        <div id="demoLab8PartA-img8" data_LoadFile="image8.html">
+            Image eight from Part B of Midterm
+        </div>
+    </div>
+
+    <div id="pictures" class="hidden">
+        <span id="midtermPictures"></span>
+    </div>
+
+
+</body>
+
+</html>
